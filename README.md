@@ -5,11 +5,9 @@ this build of st aims to be minimal, but totaly usable.
 ## Patches
 
 - bold is not bright, to not make bold colors bright
-- clipboad, making it possible to copy to the clipboad
-- font2, so we can use fallback fonts, and fontconfig fonts (read note below)
-- osc, for escaping the background color
+- boxdraw, for better boxdraw rendering
 - solarized theme
-- xresources, for setting up fonts and colors in the Xresources file
+- ISO 14755, for pushing unicode chars into st
 
 ## St is crashing 
 
