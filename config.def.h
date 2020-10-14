@@ -34,7 +34,7 @@ static float chscale = 1.0;
  *
  * More advanced example: L" `'\"()[]{}"
  */
-wchar_t *worddelimiters = L" ";
+wchar_t *worddelimiters = L" `'\"()[]{}";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -108,23 +108,23 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#444444",
-	"#af0000",
-	"#008700",
-	"#5f8700",
-	"#0087af",
-	"#878787",
-	"#005f87",
-	"#eeeeee",
+	"#444444", /* 00 black     */
+	"#af0000", /* 01 red       */
+	"#008700", /* 02 green     */
+	"#5f8700", /* 03 yellow    */
+	"#0087af", /* 04 blue 	   */
+	"#878787", /* 05 magenta   */
+	"#005f87", /* 06 cyan      */
+	"#eeeeee", /* 07 white     */
 	/* 8 bright colors */
-	"#005f87",
-	"#d70000",
-	"#d70087",
-	"#8700af",
-	"#d75f00",
-	"#d75f00",
-	"#005faf",
-	"#bcbcbc",
+	"#005f87", /* 08 brblack   */
+	"#d70000", /* 09 brred     */
+	"#d70087", /* 10 brgreen   */
+	"#8700af", /* 11 bryellow  */
+	"#d75f00", /* 12 brblue    */
+	"#d75f00", /* 13 brmagenta */
+	"#005faf", /* 14 brcyan    */
+	"#bcbcbc", /* 15 brwhite   */
 };
 /*
  * Default colors (colorname index)
